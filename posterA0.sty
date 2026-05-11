@@ -19,6 +19,9 @@
 \usepackage{fancybox}
 \usepackage{framed}
 
+% -------------
+\usepackage{float}
+
 
 %% standard packages for physics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,6 +111,28 @@
 % macros for references
 \newcommand{\figref}[1]{(fig.~\ref{#1})}
 \renewcommand{\eqref}[1]{(eq. \ref{#1})}
+
+% macros for mathematical symbols
+\newcommand{\anticomm}[2]{\left\{#1, #2\right\}}
+\renewcommand{\comm}[2]{\left[ #1,\, #2 \right]}
+\newcommand{\bdag}[1]{b_{#1}^{\dagger}}
+\newcommand{\cdag}[1]{c_{#1}^{\dagger}}
+\newcommand{\bos}[1]{b_{#1}}
+\newcommand{\fer}[1]{c_{#1}}
+\newcommand{\coh}{\ket{\alpha}}
+\newcommand{\cohd}{\bra{\alpha}}
+\newcommand{\proj}[2]{\ketbra{#1}{#1}_{#2}}
+\newcommand{\St}{\widetilde{S}}
+\newcommand{\up}{\uparrow}
+\newcommand{\down}{\downarrow}
+\newcommand{\one}{\mathbb{1}}
+\newcommand{\expdft}[2]{e^{{#1} i\frac{2\pi}{L}{#2}}}
+\newcommand{\dk}{\Delta k}
+\newcommand{\edft}[2]{e^{{#1} i\frac{\pi}{L}{#2}}}
+\newcommand{\circnum}[1]{\text{\textcircled{#1}}}
+\newcommand{\td}[1]{\tilde{\ket{#1}}}
+\newcommand{\Prj}{\mathcal{P}}
+\newcommand{\expv}[1]{\langle \hat{#1}\rangle}
 
 
 %% bibliography with biber
